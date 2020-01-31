@@ -178,12 +178,9 @@ def player_stats(player_name)
     player[:player_name] == player_name
   end
   foundinfo= foundaway ? foundaway : foundhome
-<<<<<<< HEAD
   foundinfo.reject do |key|
     key == :player_name
   end
-=======
   binding.pry
   foundinfo.reject! do |key| key == :player end
->>>>>>> 638182a6000fd0c67ba0aeec2020d93f132c688d
 end
